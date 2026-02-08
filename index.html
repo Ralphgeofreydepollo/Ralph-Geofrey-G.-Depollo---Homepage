@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Personal Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #b0c8d7;        
+      color: #000000;             
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      padding: 20px 40px;
+      background: #000;
+      gap: 40px;
+    }
+
+    .logo {
+      background: #1f2a44;        
+      color: #fff;
+      font-weight: bold;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    nav {
+      display: flex;
+      gap: 25px;
+      font-size: 14px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #aaa;
+    }
+    nav a.active,
+    nav a:hover {
+      color: #e63946;             
+    }
+
+    .main {
+      min-height: calc(100vh - 80px);
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 80px;
+    }
+
+    .content {
+      max-width: 500px;
+    }
+
+    .greeting {
+      color: #1f2a44;             
+      font-size: 14px;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .socials {
+      margin-bottom: 20px;
+      color: #000;                
+    }
+
+    .socials span {
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+      color: #000;                
+    }
+
+    h2 {
+      font-size: 20px;
+      color: #1f2a44;             
+      margin-bottom: 15px;
+    }
+
+    p {
+      color: #000;                
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      background: #1f2a44;       
+      color: #fff;
+      padding: 12px 22px;
+      border-radius: 5px;
+      font-size: 15px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    .contact {
+      margin-top: 30px;
+      display: flex;
+      gap: 20px;
+      font-size: 14px;
+      color: #000;               
+      flex-wrap: wrap;
+    }
+
+    .image img {
+      width: 400px;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+      }
+
+      .main {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .image img {
+        margin-top: 30px;
+        width: 250px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">R</div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="biography.html">Biography</a>
+      <a href="technology.html">Technology Related</a>
+      <a href="blog.html">Personal Blog</a>
+      <a href="future.html">Future and Career Goals</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="main">
+
+    <div class="content">
+
+      <h1>What’s up!</h1>
+
+      <div class="socials">
+        Follow Me On
+        <span>🎮</span>
+        <span>📷</span>
+        <span>🅕</span>
+      </div>
+
+      <h1>Hi, I’m Ralph Depollo</h1>
+      <h2>Bachelor of Science in Information Technology</h2>
+
+      <p>
+        I am a second-year BSIT student with basic knowledge in web design and development,
+        and I am continuously learning to improve my skills.
+      </p>
+
+      <a href="biography.html" class="btn">More About Me</a>
+
+      <div class="contact">
+        <span>📱 09456258197</span>
+        <span>✉ ralphgeofreydepollo@gmail.com</span>
+      </div>
+    </div>
+
+    <div class="image">
+      <img src="selfie.jpg" alt="Profile">
+    </div>
+
+  </div>
+
+</body>
+</html>
